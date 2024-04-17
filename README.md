@@ -8,17 +8,23 @@ This is a Windows Batch script that is used to add or delete specific registry k
 2. Navigate to the directory where the `office_registry_modifier.bat` file is located.
 3. Run the script with one of the following commands:
 
-   - To add a registry key:
+   - To add the registry keys:
      ```
-     office_registry_modifier.bat add [value1] [value2]
+     office_registry_modifier.bat add
      ```
-     Replace `[value1]` and `[value2]` with the values you want to set for the registry keys `Microsoft.Office.OEP.MosProviderEnabled` and `Microsoft.Office.OEP.MosManifest` respectively. The values can be `true` or `false`.
-
-   - To delete the registry key:
+   - To delete the registry keys:
      ```
      office_registry_modifier.bat delete
      ```
-4. The script will then add or delete the registry keys as per your command and print a success or failure message. It will then pause, keeping the command prompt window open until you press any key.
+4. The script will add or delete the following keys:
+   - `Microsoft.Office.OEP.MosProviderEnabled` with value `true`
+   - `Microsoft.Office.OEP.MosManifest` with value `true`
+   - `OEP.CG_MosPopulateContentEnabled` with value `true`
+   - `OEP.EnableOsfMosAppFlyout` with value `true`
+   - `OEP.MosPopulateContentEnabled` with value `true`
+   - `OEP.ChangeGate.DedupeXmlAddInForMosExtension` with value `false`
+
+5. The script will then print a success or failure message. It will then pause, keeping the command prompt window open until you press any key.
 
 ## Warning
 
