@@ -19,10 +19,10 @@ This is a Windows Batch script that is used to add or delete specific registry k
 4. The script will add or delete the following keys:
    - `Microsoft.Office.OEP.MosProviderEnabled` with value `true`
    - `Microsoft.Office.OEP.MosManifest` with value `true`
-   - `OEP.CG_MosPopulateContentEnabled` with value `true`
-   - `OEP.EnableOsfMosAppFlyout` with value `true`
-   - `OEP.MosPopulateContentEnabled` with value `true`
-   - `OEP.ChangeGate.DedupeXmlAddInForMosExtension` with value `false`
+   - `Microsoft.Office.OEP.CG_MosPopulateContentEnabled` with value `true`
+   - `Microsoft.Office.OEP.EnableOsfMosAppFlyout` with value `true`
+   - `Microsoft.Office.OEP.MosPopulateContentEnabled` with value `true`
+   - `Microsoft.Office.OEP.ChangeGate.DedupeXmlAddInForMosExtension` with value `false`
 
 5. The script will then print a success or failure message. It will then pause, keeping the command prompt window open until you press any key.
 
